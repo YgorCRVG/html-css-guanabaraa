@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            
+        }
+
+        h1 {
+            
+        }
+
+        header {
+            background-color: aquamarine;
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: aquamarine;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: aquamarine;
+            padding: 2px;
+        }
+
+        article > aside {
+            background-color: aquamarine;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 1px;
+        }
+
+        nav {
+            background-color: rgb(32, 185, 152);
+            padding: 3px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.507);
+        }
+
+        nav > a {
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+        nav > a:hover {
+            text-decoration: none;
+            color: chocolate;
+            font-weight: bold;
+        }
+
+        a { 
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vigor Doces</h1>
+        <nav>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Preços</a>
+        </nav>
+    </header>
+    <main>
+        <section id="ninho-nutella">
+            <article>
+                <h2>Ninho com nutella</h2>
+                
+                <img src="" alt="">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro natus hic ducimus ipsum maiores aut! Sint pariatur, laboriosam aut hic velit beatae nostrum voluptas, cum voluptatibus ad ipsam vitae sunt.</p>
+                
+                <aside>
+                    <p>Nossos doces de Leite Ninho com nutella são incomparáveis!</p>
+                </aside>
+            </article>
+        </section>
+
+        <section id="brigadeiros">
+            <article>
+                <h2>Brigadeiros ao Leite e Meio Amargo</h2>
+            
+                <img src="" alt="">
+            
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, quidem quam eligendi quis aspernatur veniam fuga voluptatem excepturi minima quaerat obcaecati vel quos adipisci illo. Ab, ipsa! Temporibus, distinctio minus?</p>
+            
+           
+                <aside>
+                    <p>Brigadeiros da melhor qualidade!</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Ygor Raphael.</p>
+    </footer>
+</body>
+</html>

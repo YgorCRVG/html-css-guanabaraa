@@ -13,17 +13,34 @@
 
         .item {
             background-color: lightskyblue;
+            flex: auto;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 250px;
+            flex-basis: 200px;
         }
+
+        #caixaA {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #caixaB {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        #caixaC {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="caixaA">0</div>
+        <div class="item" id="caixaB">1</div>
+        <div class="item" id="caixaC">2</div>
     </div>
 </body>
 </html>
